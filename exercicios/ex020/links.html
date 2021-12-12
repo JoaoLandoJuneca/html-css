@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <style>
+       /*
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children
+       */ 
+
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        a {
+            color: rgb(87, 87, 223);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: crimson;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: green;
+        }
+        
+        .especial {
+            background-color: darksalmon;
+        }
+
+        .especial::before {
+            content: '» ';
+        }
+
+        .especial::after {
+            content: ' «';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.io" target="_blank" rel="external">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com" target="_blank" rel="external" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://cursoemvideo.com.br" target="_blank" rel="external">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>
